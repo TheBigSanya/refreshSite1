@@ -1,0 +1,60 @@
+.TopMenu li{ 
+    list-style: none; 
+    background: black; 
+    position: relative; 
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;
+} 
+.TopMenu li a{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+}
+.TopMenu li li a{ 
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(186, 186, 186);
+} 
+.TopMenu li li li a{
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(89, 89, 89);
+}
+.TopMenu li{
+    margin-bottom: 30px;
+}
+.TopMenu li li{ 
+    margin-bottom: 30px;
+} 
+.TopMenu li li li{
+    margin-bottom: 3px;
+}
+.TopMenu { 
+    position: static; 
+    display: block; 
+} 
+.TopMenu a{ 
+    text-decoration: none; 
+    font-size: 35px; 
+    display: block; 
+    color: white; 
+    padding: 0 10; 
+    height:  40px; 
+    line-height: 40px; 
+    transition: all .5s; 
+    text-align: center; 
+    font-weight: bold;
+} 
+.TopMenu a:hover{ 
+    color: rgb(46, 154, 243); 
+}
+.All_header_menu{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+}

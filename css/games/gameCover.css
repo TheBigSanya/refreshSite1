@@ -1,0 +1,16 @@
+.Cover img{
+    border-radius: 10px;
+    max-height: 225px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+    /* max-height: 256px; */
+}
+.Cover{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

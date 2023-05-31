@@ -1,0 +1,88 @@
+.TopMenu li{ 
+    width: 75px; 
+    list-style: none; 
+    background: black; 
+    position: relative; 
+} 
+.TopMenu li li{ 
+    width: 100%; 
+} 
+.Logo, .TopMenu{ 
+    display: flex; 
+} 
+.TopMenu a{ 
+    text-decoration: none; 
+    font-size: 15px; 
+    display: block; 
+    color: white; 
+    padding: 0 10; 
+    height:  40px; 
+    line-height: 40px; 
+    transition: all .5s; 
+    text-align: center; 
+} 
+.TopMenu a:hover{ 
+    color: rgb(46, 154, 243); 
+} 
+.Logo h1{ 
+    font-size: 30px; 
+    color: white; 
+    vertical-align: middle; 
+    text-align: center; 
+    margin-right: 25px; 
+} 
+.TopMenu ul{ 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    display: none; 
+    padding: 0; 
+    border: 2px rgb(111, 111, 111) solid; 
+    width: 75px; 
+} 
+ 
+.TopMenu li:hover > ul{ 
+    display: block; 
+} 
+.TopMenu ul ul{ 
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    left: 100%; 
+} 
+.All_header_menu{ 
+    display: flex; 
+    justify-content: center; 
+    max-width: 100%; 
+    flex-wrap: wrap;
+    z-index: 1;
+}
+ 
+ 
+@media screen and (max-width: 500px) { 
+    .All_header_menu { 
+        display: flex; 
+        flex-direction: column; 
+    } 
+    .Logo { 
+        margin-bottom: 10px; 
+    } 
+    .Logo h1{ 
+        text-align: center; 
+        margin-right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    } 
+    .TopMenu { 
+        position: static; 
+        display: block; 
+    } 
+    .TopMenu li { 
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto; 
+    } 
+    .TopMenu > li:hover > ul { 
+        display: none; 
+    } 
+}
